@@ -1,11 +1,18 @@
 import express = require('express');
 
-const app: express.Application = express();
+export const app: express.Application = express();
+
+import './api/routes';
 
 app.use(express.static('public'));
 
-app.get('/', function (req, res) {
-    res.sendFile('/index.html');
+var path = require('path');
+var filePath = "./public/index.html"
+var resolvedPath = path.resolve(filePath);
+console.log(resolvedPath);
+
+app.get('*', function (req, res) {
+    res.sendFile(resolvedPath);
 });
 
 const server = app.listen(3000, function () {
