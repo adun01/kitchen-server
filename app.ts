@@ -1,15 +1,12 @@
 import express = require('express');
+const path = require('path');
 
 export const app: express.Application = express();
+var resolvedPath = path.resolve('./public/index.html');
 
-import './api/routes';
+import './routes';
 
-app.use(express.static('public'));
-
-var path = require('path');
-var filePath = "./public/index.html"
-var resolvedPath = path.resolve(filePath);
-console.log(resolvedPath);
+app.use(express.static(path.resolve('./public')));
 
 app.get('*', function (req, res) {
     res.sendFile(resolvedPath);
