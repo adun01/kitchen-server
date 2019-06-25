@@ -140,7 +140,12 @@ const data = [
                 name: 'Картофель',
                 count: 20,
                 unitOfMeasure: 'шт',
-                iconType: 1
+                iconType: 1,
+                contains: {
+                    protein: 2,
+                    carbohydrates: 16.3,
+                    fat: 0.4
+                }
             },
             {
                 id: 2,
@@ -148,7 +153,12 @@ const data = [
                 count: 4,
                 unitOfMeasure: 'шт',
                 image: '/images/onions.jpeg',
-                iconType: 2
+                iconType: 2,
+                contains: {
+                    protein: 1.4,
+                    carbohydrates: 8.2,
+                    fat: 0.2
+                }
             },
             {
                 id: 3,
@@ -156,52 +166,82 @@ const data = [
                 count: 15,
                 unitOfMeasure: 'шт',
                 image: '/images/chicken-legs.jpeg',
-                iconType: 3
+                iconType: 3,
+                contains: {
+                    protein: 19.4,
+                    carbohydrates: 0.2,
+                    fat: 14.6
+                }
             }, {
                 id: 4,
                 name: 'Сыр',
                 count: 300,
                 unitOfMeasure: 'г',
                 image: '/images/cheese.jpeg',
-                iconType: 4
+                iconType: 4,
+                contains: {
+                    protein: 23.2,
+                    carbohydrates: 2,
+                    fat: 29.5
+                }
             }, {
                 id: 5,
                 name: 'Майонез',
                 count: 20,
                 unitOfMeasure: 'шт',
                 image: '/images/mayonnaise.jpeg',
-                iconType: 5
+                iconType: 5,
+                contains: {
+                    protein: 1.8,
+                    carbohydrates: 5.11,
+                    fat: 49.37
+                }
             }, {
                 id: 6,
                 name: 'Соль',
                 image: '/images/salt.jpeg',
-                iconType: 6
+                iconType: 6,
+                contains: {
+                    protein: 0,
+                    carbohydrates: 0,
+                    fat: 0
+                }
             }, {
                 id: 7,
                 name: 'Специи',
                 image: '/images/condiment.jpeg',
-                iconType: 7
+                iconType: 7,
+                contains: {
+                    protein: 0,
+                    carbohydrates: 0,
+                    fat: 0
+                }
             }, {
                 id: 8,
                 name: 'Зелень',
                 image: '/images/greenery.jpeg',
-                iconType: 8
+                iconType: 8,
+                contains: {
+                    protein: 0,
+                    carbohydrates: 0,
+                    fat: 0
+                }
             },
         ],
         steps: [
             {
                 id: 1,
                 description: `Нарезать лук полукольцами и замариновать его в майонезе.`,
-                image: './images/step1.jpg'
+                image: '/images/step1.jpg'
             }, {
                 id: 2,
                 description: `Нарезать картошку, посолить, замариновать в майонезе.`,
-                image: './images/step2.jpg'
+                image: '/images/step2.jpg'
             }, {
                 id: 3,
                 description: `Курицу (не поверите!) тоже замариновать в майонезе! :)\n +
                 'Посолить, добавить специи по вкусу.`,
-                image: './images/step3.jpg'
+                image: '/images/step3.jpg'
             }, {
                 id: 4,
                 description: `
@@ -209,18 +249,18 @@ const data = [
 1 - картошка;
 2 - лук;
 3 - мясо.`,
-                image: './images/step4.jpg'
+                image: '/images/step4.jpg'
             }, {
                 id: 5,
                 description: `
 Поставить в духовку и готовить при температуре 220 градусов 40-50 минут.`,
-                image: './images/step5.jpg'
+                image: '/images/step5.jpg'
             }, {
                 id: 6,
                 description: `Затем посыпать тертым сыром и рубленой зеленью. 
 Когда сыр расплавится - слоёная картошка готова, можно подавать её на стол.
 Приятного аппетита!`,
-                image: './images/step6.jpg'
+                image: '/images/step6.jpg'
             }
         ]
     }, {
@@ -228,25 +268,25 @@ const data = [
         name: 'Запеченные куринные ножки с соусом тартар',
         url: 'baked-chicken-legs-with-tartar-sauce',
         description: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.',
-        image: './images/3.jpg'
+        image: '/images/3.jpg'
     }, {
         id: 4,
         name: 'Запеченные куринные ножки с соусом тартар',
         url: 'baked-chicken-legs-with-tartar-sauce',
         description: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.',
-        image: './images/4.jpg'
+        image: '/images/4.jpg'
     }, {
         id: 5,
         name: 'Запеченные куринные ножки с соусом тартар',
         url: 'baked-chicken-legs-with-tartar-sauce',
         description: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.',
-        image: './images/4.jpg'
+        image: '/images/4.jpg'
     }, {
         id: 6,
         name: 'Запеченные куринные ножки с соусом тартар',
         url: 'baked-chicken-legs-with-tartar-sauce',
         description: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.',
-        image: './images/4.jpg'
+        image: '/images/4.jpg'
     }
 ];
 
